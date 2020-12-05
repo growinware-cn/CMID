@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<patterns>
+
+	<pattern>
+		<id>pat_000</id>
+		<freshness>2000</freshness>  <!-- ms -->
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>any</predicate>
+		<object>any</object>
+		<site>any</site>
+	</pattern>
+
+</patterns>
