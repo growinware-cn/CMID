@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<rules>
+	<rule>
+		<id>rule_00</id>
+		<formula>
+			<forall var = "v1" in = "pat_000">
+				<bfunction name = "sz_loc_range">
+					<param pos = "1" var = "v1" field = "object" />
+				</bfunction>
+			</forall>
+		</formula>
+	</rule>
+</rules>
