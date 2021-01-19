@@ -41,9 +41,4 @@ public class GEASOptScheduler extends GEAScheduler {
     protected List<Boolean> calcSubTree(Checker checker, String patternId, Context c) {
         return null;
     }
-
-    @Override
-    protected void sCheck(Checker checker) {
-        return;
-    }
 }

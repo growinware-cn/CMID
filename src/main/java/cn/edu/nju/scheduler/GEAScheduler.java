@@ -80,7 +80,6 @@ public class GEAScheduler implements Scheduler{
         if (result) { //make batch empty
             updateWinSize(checker.getName(), currentBatch.size());
             currentBatch.clear();
-            sCheck(checker);
         } else {
             String c = cCondition(checker, currentBatch, elements, subTree);
             if (c == null) {
@@ -144,11 +143,6 @@ public class GEAScheduler implements Scheduler{
     void updateGEASOptWinSize(String name) {
         int [] tmp = winSizeMap.get(name);
         tmp[0] += 2;
-    }
-
-    protected void sCheck(Checker checker) {
-        checker.sCheck(this.contextList);
-        this.contextList.clear();
     }
 
     @Override

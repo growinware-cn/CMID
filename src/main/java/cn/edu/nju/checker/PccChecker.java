@@ -72,13 +72,4 @@ public class PccChecker extends Checker{
         }
         return super.evaluation(cctRoot, param);
     }
-
-    @Override
-    public void sCheck(List<Context> contextList) {
-        CCTNode newRoot = new CCTNode(stRoot.getNodeName(), stRoot.getNodeType());
-        build(stRoot, newRoot, 2);
-
-        List<Context> param = new ArrayList<>();
-        evaluation(newRoot, param);
-    }
 }
