@@ -58,4 +58,15 @@ public class ContextParser {
         }
         return context;
     }
+
+    public static String updateTime(String str, String time) {
+        String [] strs = str.split(",");
+        if(strs[0].equals("+") || strs[0].equals("-")) {
+            strs[3] = time;
+        }
+        else {
+            strs[0] = time;
+        }
+        return String.join(",", strs);
+    }
 }

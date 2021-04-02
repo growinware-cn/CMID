@@ -1,6 +1,5 @@
 package cn.edu.nju.pattern;
 import cn.edu.nju.context.Context;
-import cn.edu.nju.util.HotAreaHelper;
 import cn.edu.nju.util.TimestampHelper;
 
 import java.util.*;
@@ -126,9 +125,6 @@ public class Pattern {
                 String [] elem = site.split("_");
                 if (elem[1].matches("[0-9]")) {
                     belong = belong && (site.charAt(site.length() - 1) == plateNumber.charAt(plateNumber.length() - 1));
-                }
-                else {
-                    belong = belong && HotAreaHelper.inArea(elem[1], context.getLatitude(), context.getLongitude());
                 }
 
             }
