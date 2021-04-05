@@ -46,7 +46,6 @@ public class Server extends AbstractCheckerBuilder implements Runnable{
                 DatagramPacket packet = new DatagramPacket(buf, buf.length);
                 serverSocket.receive(packet);
 
-                String curTime = TimestampHelper.getCurrentTimestamp();
                 String msg = new String(packet.getData(),0, packet.getLength());
                 if ("exit".equals(msg)) {
                     System.out.println();
@@ -69,7 +68,6 @@ public class Server extends AbstractCheckerBuilder implements Runnable{
 //                }
 
                 msg = msg.substring(msg.indexOf(",") + 1, msg.lastIndexOf(","));
-                msg = ContextParser.updateTime(msg, curTime);
 
                 long start = System.nanoTime();
 
