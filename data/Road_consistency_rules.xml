@@ -1,0 +1,764 @@
+<?xml version="1.0"?>
+
+<rules>
+
+	<rule>
+		<id>rule_sole</id>
+		<formula>
+			<forall var = "v1" in = "pat_sole">
+				<bfunction name = "sz_loc_range">
+					<param pos = "1" var = "v1" field = "object" />
+				</bfunction>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_mixed</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_mixed_1">
+				<forall var = "v2" in = "pat_dual_mixed_2">
+					<implies>
+						<and>
+							<not>
+								<bfunction name = "same">
+									<param pos = "1" var = "v1" field = "subject" />
+									<param pos = "2" var = "v2" field = "subject" />
+								</bfunction>
+							</not>
+							<bfunction name = "sz_loc_close">
+								<param pos = "1" var = "v1" field = "object" />
+								<param pos = "2" var = "v2" field = "object" />
+							</bfunction>
+						</and>
+						<bfunction name = "sz_spd_close">
+								<param pos = "1" var = "v1" field = "object" />
+								<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_s0</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_s0_1">
+				<forall var = "v2" in = "pat_dual_s0_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_s1</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_s1_1">
+				<forall var = "v2" in = "pat_dual_s1_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_s2</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_s2_1">
+				<forall var = "v2" in = "pat_dual_s2_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_s3</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_s3_1">
+				<forall var = "v2" in = "pat_dual_s3_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_s4</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_s4_1">
+				<forall var = "v2" in = "pat_dual_s4_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_s5</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_s5_1">
+				<forall var = "v2" in = "pat_dual_s5_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_s6</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_s6_1">
+				<forall var = "v2" in = "pat_dual_s6_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_s7</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_s7_1">
+				<forall var = "v2" in = "pat_dual_s7_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_s8</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_s8_1">
+				<forall var = "v2" in = "pat_dual_s8_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_s9</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_s9_1">
+				<forall var = "v2" in = "pat_dual_s9_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sA</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sA_1">
+				<forall var = "v2" in = "pat_dual_sA_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sB</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sB_1">
+				<forall var = "v2" in = "pat_dual_sB_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sC</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sC_1">
+				<forall var = "v2" in = "pat_dual_sC_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sD</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sD_1">
+				<forall var = "v2" in = "pat_dual_sD_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sE</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sE_1">
+				<forall var = "v2" in = "pat_dual_sE_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sF</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sF_1">
+				<forall var = "v2" in = "pat_dual_sF_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sG</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sG_1">
+				<forall var = "v2" in = "pat_dual_sG_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sH</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sH_1">
+				<forall var = "v2" in = "pat_dual_sH_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sI</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sI_1">
+				<forall var = "v2" in = "pat_dual_sI_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sJ</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sJ_1">
+				<forall var = "v2" in = "pat_dual_sJ_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sK</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sK_1">
+				<forall var = "v2" in = "pat_dual_sK_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sL</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sL_1">
+				<forall var = "v2" in = "pat_dual_sL_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sM</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sM_1">
+				<forall var = "v2" in = "pat_dual_sM_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sN</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sN_1">
+				<forall var = "v2" in = "pat_dual_sN_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sO</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sO_1">
+				<forall var = "v2" in = "pat_dual_sO_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sP</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sP_1">
+				<forall var = "v2" in = "pat_dual_sP_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sQ</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sQ_1">
+				<forall var = "v2" in = "pat_dual_sQ_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sR</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sR_1">
+				<forall var = "v2" in = "pat_dual_sR_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sS</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sS_1">
+				<forall var = "v2" in = "pat_dual_sS_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sT</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sT_1">
+				<forall var = "v2" in = "pat_dual_sT_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sU</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sU_1">
+				<forall var = "v2" in = "pat_dual_sU_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sV</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sV_1">
+				<forall var = "v2" in = "pat_dual_sV_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sW</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sW_1">
+				<forall var = "v2" in = "pat_dual_sW_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sX</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sX_1">
+				<forall var = "v2" in = "pat_dual_sX_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sY</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sY_1">
+				<forall var = "v2" in = "pat_dual_sY_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+	<rule>
+		<id>rule_dual_sZ</id>
+		<formula>
+			<forall var = "v1" in = "pat_dual_sZ_1">
+				<forall var = "v2" in = "pat_dual_sZ_2">
+					<implies>
+						<bfunction name = "same">
+							<param pos = "1" var = "v1" field = "subject" />
+							<param pos = "2" var = "v2" field = "subject" />
+						</bfunction>
+						<bfunction name = "sz_loc_dist">
+							<param pos = "1" var = "v1" field = "object" />
+							<param pos = "2" var = "v2" field = "object" />
+						</bfunction>
+					</implies>
+				</forall>
+			</forall>
+		</formula>
+	</rule>
+
+</rules>

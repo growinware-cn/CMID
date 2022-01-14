@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="graduation-project:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e3a1e335-e61a-4bf1-b339-d555b3eff607" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/njucjc/graduation-project" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1iAa8bsMzIGrUwjqEDNEGYu5NLC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CMID-release/CMID-gitee/CMID-master" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\CMID-test\data" />
+      <recent name="D:\Code\CMID-test\oracles" />
+      <recent name="D:\Code\CMID-test" />
+      <recent name="D:\Code\CMID-test\oracle" />
+      <recent name="D:\Code\graduation-project\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code\CMID-test\src\main\resources" />
+      <recent name="D:\Code\graduation-project\data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="ChangeFileHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.edu.nju.util.ChangeFileHelper" />
+      <module name="graduation-project" />
+      <option name="PROGRAM_PARAMETERS" value="patterns.xml computer_data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.nju.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.edu.nju.client.Client" />
+      <module name="graduation-project" />
+      <option name="PROGRAM_PARAMETERS" value="config.properties" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.nju.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.edu.nju.util.GenSample" />
+      <module name="graduation-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.nju.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.edu.nju.Main" />
+      <module name="graduation-project" />
+      <option name="PROGRAM_PARAMETERS" value="config.properties" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.nju.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.edu.nju.server.Server" />
+      <module name="graduation-project" />
+      <option name="PROGRAM_PARAMETERS" value="config.properties" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.nju.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.GenSample" />
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.ChangeFileHelper" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ChangeFileHelper" />
+        <item itemvalue="Application.GenSample" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3a1e335-e61a-4bf1-b339-d555b3eff607" name="Default Changelist" comment="" />
+      <created>1601352694007</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601352694007</updated>
+      <workItem from="1601352695600" duration="280000" />
+      <workItem from="1601358204098" duration="8000" />
+      <workItem from="1601373400790" duration="10000" />
+      <workItem from="1601430643417" duration="2000" />
+      <workItem from="1601436323484" duration="8247000" />
+      <workItem from="1601453332887" duration="76000" />
+      <workItem from="1601453510020" duration="87000" />
+      <workItem from="1601453652493" duration="59000" />
+      <workItem from="1601964147709" duration="523000" />
+      <workItem from="1601964686715" duration="69000" />
+      <workItem from="1601964955537" duration="84000" />
+      <workItem from="1601965306411" duration="42000" />
+      <workItem from="1601966249936" duration="141000" />
+      <workItem from="1601967646774" duration="116000" />
+      <workItem from="1601967774369" duration="75000" />
+      <workItem from="1601968238018" duration="629000" />
+      <workItem from="1601968887506" duration="196000" />
+      <workItem from="1601969093440" duration="84000" />
+      <workItem from="1601969250706" duration="1457000" />
+      <workItem from="1601971125990" duration="459000" />
+      <workItem from="1601980340083" duration="140000" />
+      <workItem from="1601980686028" duration="309000" />
+      <workItem from="1602056768940" duration="1063000" />
+      <workItem from="1602068889684" duration="928000" />
+      <workItem from="1602217961592" duration="9429000" />
+      <workItem from="1602228565026" duration="1558000" />
+      <workItem from="1602292378384" duration="899000" />
+      <workItem from="1602303734300" duration="771000" />
+      <workItem from="1602821021136" duration="1300000" />
+      <workItem from="1603080550142" duration="879000" />
+      <workItem from="1603158517604" duration="1052000" />
+      <workItem from="1604391911526" duration="3439000" />
+      <workItem from="1605512751103" duration="121000" />
+      <workItem from="1607049086955" duration="141000" />
+      <workItem from="1607049240790" duration="216000" />
+      <workItem from="1607393790745" duration="7697000" />
+      <workItem from="1607567253009" duration="1346000" />
+      <workItem from="1607915300984" duration="7712000" />
+      <workItem from="1607930281824" duration="27000" />
+      <workItem from="1607997463282" duration="3826000" />
+      <workItem from="1608011352346" duration="71000" />
+      <workItem from="1610156825068" duration="6000" />
+      <workItem from="1611030543763" duration="90000" />
+      <workItem from="1611031067986" duration="823000" />
+      <workItem from="1611541771045" duration="9522000" />
+      <workItem from="1611621448949" duration="5079000" />
+      <workItem from="1611634136615" duration="5677000" />
+      <workItem from="1612178053387" duration="819000" />
+      <workItem from="1612179157370" duration="473000" />
+      <workItem from="1612245896129" duration="1075000" />
+      <workItem from="1612404815536" duration="11507000" />
+      <workItem from="1612419314406" duration="5221000" />
+      <workItem from="1612483911788" duration="5742000" />
+      <workItem from="1612489793951" duration="29000" />
+      <workItem from="1612489843413" duration="4003000" />
+      <workItem from="1612603718160" duration="1101000" />
+      <workItem from="1612665776818" duration="715000" />
+      <workItem from="1612861890172" duration="247000" />
+      <workItem from="1612882666238" duration="381000" />
+      <workItem from="1613098125633" duration="5000" />
+      <workItem from="1613098144034" duration="617000" />
+      <workItem from="1613099860554" duration="497000" />
+      <workItem from="1613118169144" duration="89000" />
+      <workItem from="1613640554597" duration="87000" />
+      <workItem from="1613696996870" duration="2470000" />
+      <workItem from="1614400851206" duration="11000" />
+      <workItem from="1614401245654" duration="63000" />
+      <workItem from="1616649012771" duration="21000" />
+      <workItem from="1618305352614" duration="516000" />
+      <workItem from="1618309735721" duration="146000" />
+      <workItem from="1618327513094" duration="300000" />
+      <workItem from="1618327983878" duration="46000" />
+      <workItem from="1618328321323" duration="69000" />
+      <workItem from="1618486765187" duration="610000" />
+      <workItem from="1618487392942" duration="6867000" />
+      <workItem from="1618531242588" duration="1951000" />
+      <workItem from="1618534196436" duration="124000" />
+      <workItem from="1618568200015" duration="3440000" />
+      <workItem from="1618801637785" duration="7698000" />
+      <workItem from="1618889750694" duration="1912000" />
+      <workItem from="1618896591858" duration="7202000" />
+      <workItem from="1619409983128" duration="1250000" />
+      <workItem from="1619535007844" duration="44000" />
+      <workItem from="1620275375697" duration="18000" />
+      <workItem from="1622296474613" duration="726000" />
+      <workItem from="1622297353681" duration="5000" />
+      <workItem from="1623916795299" duration="357000" />
+      <workItem from="1623917235041" duration="590000" />
+      <workItem from="1623917981076" duration="30000" />
+      <workItem from="1623918379748" duration="554000" />
+      <workItem from="1624333999750" duration="92000" />
+      <workItem from="1624493855871" duration="874000" />
+      <workItem from="1624494752945" duration="657000" />
+      <workItem from="1624495636244" duration="26000" />
+      <workItem from="1624502796981" duration="50000" />
+      <workItem from="1624600230650" duration="32000" />
+      <workItem from="1624671407536" duration="98000" />
+      <workItem from="1625037542795" duration="26000" />
+      <workItem from="1625037718521" duration="2277000" />
+      <workItem from="1625052249331" duration="920000" />
+      <workItem from="1625053275129" duration="839000" />
+      <workItem from="1625054135022" duration="8441000" />
+      <workItem from="1625141667191" duration="700000" />
+      <workItem from="1625212868650" duration="66000" />
+      <workItem from="1625213149053" duration="8413000" />
+      <workItem from="1626320691901" duration="1730000" />
+      <workItem from="1626350036008" duration="605000" />
+      <workItem from="1627003780499" duration="1110000" />
+      <workItem from="1627285673617" duration="663000" />
+      <workItem from="1627286552845" duration="4000" />
+      <workItem from="1627289968249" duration="1516000" />
+      <workItem from="1627348774983" duration="1823000" />
+      <workItem from="1627633061399" duration="25000" />
+      <workItem from="1628044064201" duration="7148000" />
+      <workItem from="1629712003427" duration="1568000" />
+      <workItem from="1629714291793" duration="41000" />
+      <workItem from="1629964157145" duration="1635000" />
+      <workItem from="1641430752818" duration="108000" />
+      <workItem from="1642123492963" duration="718000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1042" y="296" key="FileChooserDialogImpl" timestamp="1641430860537">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1042" y="296" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1641430860537" />
+    <state width="633" height="377" key="GridCell.Tab.0.bottom" timestamp="1642124219239">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="633" height="377" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1642124219239" />
+    <state width="633" height="377" key="GridCell.Tab.0.center" timestamp="1642124219239">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="633" height="377" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1642124219239" />
+    <state width="633" height="377" key="GridCell.Tab.0.left" timestamp="1642124219239">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="633" height="377" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1642124219239" />
+    <state width="633" height="377" key="GridCell.Tab.0.right" timestamp="1642124219239">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="633" height="377" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1642124219239" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/graduation_project$Server.ic" NAME="Server Coverage Results" MODIFIED="1602222830705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cn.edu.nju.server.*</FILTER>
+    </SUITE>
+  </component>
+</project>

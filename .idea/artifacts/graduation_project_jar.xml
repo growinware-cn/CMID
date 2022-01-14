@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="graduation-project:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/graduation_project_jar</output-path>
+    <root id="archive" name="graduation-project.jar">
+      <element id="module-output" name="graduation-project" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jcudaUtils-0.0.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcuda/jcuda-natives/0.8.0/jcuda-natives-0.8.0-windows-x86_64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcuda/jcusolver-natives/0.8.0/jcusolver-natives-0.8.0-windows-x86_64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcuda/jcudnn-natives/0.8.0/jcudnn-natives-0.8.0-windows-x86_64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcuda/jnvgraph-natives/0.8.0/jnvgraph-natives-0.8.0-windows-x86_64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcuda/jcurand-natives/0.8.0/jcurand-natives-0.8.0-windows-x86_64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcuda/jcusparse/0.8.0/jcusparse-0.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcuda/jcuda/0.8.0/jcuda-0.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcuda/jcusolver/0.8.0/jcusolver-0.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcuda/jnvgraph/0.8.0/jnvgraph-0.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcuda/jcublas-natives/0.8.0/jcublas-natives-0.8.0-windows-x86_64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcuda/jcublas/0.8.0/jcublas-0.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcuda/jcusparse-natives/0.8.0/jcusparse-natives-0.8.0-windows-x86_64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcuda/jcufft-natives/0.8.0/jcufft-natives-0.8.0-windows-x86_64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcuda/jcufft/0.8.0/jcufft-0.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcuda/jcurand/0.8.0/jcurand-0.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jcuda/jcudnn/0.8.0/jcudnn-0.8.0.jar" path-in-jar="/" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/resources" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,755 @@
+<?xml version="1.0"?>
+
+<patterns>
+
+	<pattern>
+		<id>pat_sole</id>
+		<freshness>2000</freshness>  <!-- ms -->
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>any</predicate>
+		<object>any</object>
+		<site>any</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_mixed_1</id>
+		<freshness>20000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>any</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_mixed_2</id>
+		<freshness>20000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>any</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s0_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_0</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s0_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_0</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s1_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_1</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s1_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_1</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s2_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_2</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s2_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_2</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s3_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_3</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s3_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_3</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s4_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_4</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s4_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_4</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s5_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_5</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s5_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_5</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s6_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_6</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s6_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_6</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s7_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_7</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s7_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_7</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s8_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_8</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s8_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_8</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s9_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_9</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_s9_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_9</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sA_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_A</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sA_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_A</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sB_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_B</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sB_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_B</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sC_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_C</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sC_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_C</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sD_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_D</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sD_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_D</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sE_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_E</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sE_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_E</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sF_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_F</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sF_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_F</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sG_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_G</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sG_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_G</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sH_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_H</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sH_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_H</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sI_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_I</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sI_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_I</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sJ_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_J</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sJ_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_J</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sK_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_K</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sK_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_K</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sL_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_L</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sL_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_L</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sM_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_M</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sM_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_M</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sN_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_N</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sN_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_N</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sO_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_O</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sO_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_O</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sP_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_P</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sP_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_P</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sQ_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_Q</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sQ_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_Q</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sR_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_R</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sR_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_R</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sS_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_S</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sS_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_S</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sT_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_T</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sT_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_T</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sU_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_U</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sU_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_U</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sV_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_V</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sV_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_V</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sW_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_W</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sW_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_W</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sX_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_X</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sX_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_X</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sY_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_Y</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sY_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_Y</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sZ_1</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_Z</site>
+	</pattern>
+
+	<pattern>
+		<id>pat_dual_sZ_2</id>
+		<freshness>48000</freshness>
+		<category>location</category>
+		<subject>any</subject>
+		<predicate>run_with_service</predicate>
+		<object>any</object>
+		<site>sutpc_Z</site>
+	</pattern>
+
+</patterns>
