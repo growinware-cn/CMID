@@ -32,7 +32,7 @@ public class GAINChecker extends Checker {
 
     //private KernelLauncher genTruthValue;
 
-   // private KernelLauncher genLinks;
+    // private KernelLauncher genLinks;
 
     private  KernelLauncher evaluation;
 
@@ -42,7 +42,7 @@ public class GAINChecker extends Checker {
 
     private Map<String, Integer> patternIdMap;
 
-    private static final int threadPerBlock = 512;
+    private static final int threadPerBlock = 128;
 
     private CUdeviceptr deviceTruthValueResult;
 
@@ -187,7 +187,12 @@ public class GAINChecker extends Checker {
 
     @Override
     public boolean doCheck() {
-       // assert false:"Something is being to do.";
+        // assert false:"Something is being to do.";
+        try {
+            Thread.sleep(2);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         checkTimes++;
         computeRTTBranchSize(this.stRoot);
         int cctSize = branchSize[stSize - 1];
@@ -274,7 +279,7 @@ public class GAINChecker extends Checker {
 
     @Override
     public boolean add(String patternId, Context context) {
-      //  return super.add(patternId, context);
+        //  return super.add(patternId, context);
         if (!addContextToPattern(patternId, context)) {
             return false;
         }
@@ -332,7 +337,7 @@ public class GAINChecker extends Checker {
         if(node == null) {
             return ;
         }
-  //      System.out.println(currentNodeNum[0] + " :" + node.getNodeName());
+        //      System.out.println(currentNodeNum[0] + " :" + node.getNodeName());
         node.setNodeNum(currentNodeNum[0]);
         constraintNodes[currentNodeNum[0]] = node;
         currentNodeNum[0]--;

@@ -1,5 +1,7 @@
 package cn.edu.nju.context;
 
+import java.util.Objects;
+
 /**
  * Created by njucjc on 2017/10/3.
  */
@@ -95,7 +97,7 @@ public class Context {
 
         Context context = (Context) o;
 
-        return plateNumber != null ? plateNumber.equals(context.plateNumber) : context.plateNumber == null;
+        return Objects.equals(plateNumber, context.plateNumber);
     }
 
     @Override

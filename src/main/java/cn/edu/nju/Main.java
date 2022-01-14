@@ -9,7 +9,14 @@ public class Main  {
 
     public static void main(String[] args) {
         if (args.length == 1) {
-            Thread checkerThread = new Thread(new CheckerBuilder(args[0]));
+            Thread checkerThread = new Thread(new CheckerBuilder(args[0], ""));
+            checkerThread.setPriority(Thread.MAX_PRIORITY);
+            checkerThread.start();
+//            CheckerBuilder builder = new CheckerBuilder(args[0]);
+//            builder.run();
+        }
+        else if (args.length == 2) {
+            Thread checkerThread = new Thread(new CheckerBuilder(args[0], args[1]));
             checkerThread.setPriority(Thread.MAX_PRIORITY);
             checkerThread.start();
 //            CheckerBuilder builder = new CheckerBuilder(args[0]);

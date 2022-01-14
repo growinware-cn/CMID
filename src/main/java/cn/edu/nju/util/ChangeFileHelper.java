@@ -51,10 +51,11 @@ public class ChangeFileHelper {
         }
     }
 
-    public void parseChangeFile(String changeFilePath) {
+    public String parseChangeFile(String changeFilePath) {
         Map<String, List<String>> contextChangeMap = new TreeMap<>();
         ContextStaticRepo contextStaticRepo = new ContextStaticRepo(changeFilePath);
-        File file = new File(changeFilePath.split("\\.")[0] + "_change.txt");
+        String path = changeFilePath.split("\\.")[0] + "_transformed.txt";
+        File file = new File(path);
 
         Context context;
         List<String> res = new ArrayList<>();
@@ -110,9 +111,7 @@ public class ChangeFileHelper {
             e.printStackTrace();
         }
 
-
-
-
+        return path;
     }
 
 

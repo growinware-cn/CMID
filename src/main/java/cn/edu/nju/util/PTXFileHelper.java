@@ -1,9 +1,8 @@
 package cn.edu.nju.util;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
+import jdk.internal.util.xml.impl.Input;
+
+import java.io.*;
 
 public class PTXFileHelper {
 
@@ -25,6 +24,7 @@ public class PTXFileHelper {
             endIndex = cuFileName.length()-1;
         }
         String ptxFileName = cuFileName.substring(0, endIndex+1)+"ptx";
+
         File ptxFile = new File(ptxFileName);
         if (ptxFile.exists())
         {

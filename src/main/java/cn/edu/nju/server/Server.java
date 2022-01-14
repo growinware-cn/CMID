@@ -2,7 +2,7 @@ package cn.edu.nju.server;
 
 import cn.edu.nju.builder.AbstractCheckerBuilder;
 import cn.edu.nju.checker.Checker;
-import cn.edu.nju.context.ContextParser;
+import cn.edu.nju.util.Interaction;
 import cn.edu.nju.util.LogFileHelper;
 import cn.edu.nju.util.TimestampHelper;
 
@@ -23,12 +23,15 @@ public class Server extends AbstractCheckerBuilder implements Runnable{
     private byte [] buf = new byte[256];
 
     public Server(String configFilePath)  {
-        super(configFilePath);
+        super(configFilePath,"");
+        System.out.println("[INFO] 服务器开始启动");
+        Interaction.say("进行端口绑定，并建立链接", isParted);
         try {
             serverSocket = new DatagramSocket(port);
         }catch(IOException e) {
             e.printStackTrace();
         }
+        System.out.println("[INFO] 成功绑定" + port + "端口，链接建立");
     }
 
     @Override
@@ -40,7 +43,9 @@ public class Server extends AbstractCheckerBuilder implements Runnable{
 
         long timeSum = 0;
 
-        System.out.println("[INFO] Sever启动完毕，等待Client连接并启动一致性检测......");
+        System.out.println("[INFO] 服务器启动完毕");
+        Interaction.say("开始等待客户端连接，并接收数据", isParted);
+        System.out.println("[INFO] 成功开始等待接收数据，数据接收后进行一致性检测");
         try {
             while (running) {
                 DatagramPacket packet = new DatagramPacket(buf, buf.length);
@@ -48,8 +53,6 @@ public class Server extends AbstractCheckerBuilder implements Runnable{
 
                 String msg = new String(packet.getData(),0, packet.getLength());
                 if ("exit".equals(msg)) {
-                    System.out.println();
-                    System.out.println("[INFO] 一致性检测结束，Server关闭......");
                     running = false;
                     break;
                 }
@@ -83,7 +86,7 @@ public class Server extends AbstractCheckerBuilder implements Runnable{
                     inc += checker.getInc();
                 }
 
-                System.out.print( "[INFO] Send/Receive: " + (num + 1) + "/" + count +
+                System.out.print( "[INFO] Receive/send: " + count + "/" + (num + 1) +
                         "\tTotal inc: "+ inc +
                         "\tTotal Checking time: " + (timeSum/1000000)  +" ms\r");
 
@@ -103,8 +106,19 @@ public class Server extends AbstractCheckerBuilder implements Runnable{
             inc += checker.getInc();
             time = time + checker.getTimeCount();
         }
-        LogFileHelper.getLogger().info("Total Inc: " + inc, true);
-        LogFileHelper.getLogger().info("Total checking time: " +  timeSum / 1000000 + " ms", true);
+
+        System.out.println();
+        System.out.println("[INFO] 一致性检测过程完成，共检测出" + inc + "个一致性错误");
+        System.out.println("[INFO] 检测时间为" + timeSum / 1000000 + " ms");
+        LogFileHelper.getLogger().info("Total Data Proceesed: " + count, false);
+        LogFileHelper.getLogger().info("Total Inc: " + inc, false);
+        LogFileHelper.getLogger().info("Total checking time: " +  timeSum / 1000000 + " ms", false);
+
+        Interaction.say("关闭链接，并关闭服务器", isParted);
+        serverSocket.close();
+        System.out.println("[INFO] 成功关闭链接，服务器关闭");
+
+        Interaction.say("进入结果分析", isParted);
         accuracy(LogFileHelper.logFilePath);
         shutdown();
     }

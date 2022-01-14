@@ -1,6 +1,7 @@
 package cn.edu.nju.builder;
 
 import cn.edu.nju.checker.Checker;
+import cn.edu.nju.util.Interaction;
 import cn.edu.nju.util.LogFileHelper;
 
 import java.io.BufferedReader;
@@ -13,20 +14,16 @@ import java.util.List;
  */
 public class CheckerBuilder  extends AbstractCheckerBuilder implements Runnable{
 
-    public CheckerBuilder(String configFilePath) {
-        super(configFilePath);
+    public CheckerBuilder(String configFilePath, String argsString) {
+        super(configFilePath, argsString);
     }
 
     @Override
     public void run() {
+        Interaction.say("进入一致性检测处理", isParted);
         List<String> contextList;
-        if("time".equals(this.changeHandlerType.split("-")[1])) {
-            contextList = fileReader(this.dataFilePath);
-        }
-        else {
-            contextList = fileReader(this.changeFilePath);
-        }
-        System.out.println("[INFO] 开始一致性检测......");
+        contextList = fileReader(this.dataFilePath);
+        System.out.println("[INFO] 开始一致性处理");
         int count = 0;
         long startTime = System.nanoTime();
         for(String change : contextList) {
@@ -41,16 +38,21 @@ public class CheckerBuilder  extends AbstractCheckerBuilder implements Runnable{
         for(Checker checker : checkerList) {
             incCount += checker.getInc();
         }
+
         System.out.println();
-        System.out.println("[INFO] 一致性检测完毕......");
-        LogFileHelper.getLogger().info("Total INC: " + incCount, true);
-        LogFileHelper.getLogger().info("Total checking time: " + (endTime - startTime) / 1000000 + " ms", true);
+        System.out.println("[INFO] 一致性检测过程完成，共检测出" + incCount + "个一致性错误");
+        System.out.println("[INFO] 检测时间为" + (endTime - startTime) / 1000000 + " ms");
+        LogFileHelper.getLogger().info("Total INC: " + incCount, false);
+        LogFileHelper.getLogger().info("Total checking time: " + (endTime - startTime) / 1000000 + " ms", false);
+
+        Interaction.say("进入结果分析", isParted);
         accuracy(LogFileHelper.logFilePath);
         shutdown();
+
     }
 
     public static void main(String[] args) {
-        CheckerBuilder checkerBuilder = new CheckerBuilder("config.properties");
+        CheckerBuilder checkerBuilder = new CheckerBuilder("config.properties","");
     }
 
 

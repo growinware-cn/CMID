@@ -8,10 +8,10 @@ import java.io.OutputStreamWriter;
 public class Logger {
     private BufferedWriter out;
 
-    public Logger(String file) {
+    public Logger(String file, boolean append) {
         try {
             out = new BufferedWriter(new OutputStreamWriter(
-                    new FileOutputStream(file, true)));
+                    new FileOutputStream(file, append)));
         } catch (Exception e) {
             e.printStackTrace();
         }

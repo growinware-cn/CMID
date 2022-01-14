@@ -1,5 +1,7 @@
 package cn.edu.nju.client;
 
+import cn.edu.nju.util.ChangeFileHelper;
+import cn.edu.nju.util.Interaction;
 import cn.edu.nju.util.TimestampHelper;
 
 import java.io.*;
@@ -17,6 +19,7 @@ public class Client implements Runnable{
     private DatagramSocket socket;
     private InetAddress address;
     int port = 8000;
+    private static boolean isParted = false;
 
     private List<String> contextStrList;
     private List<Long> sleepTime;
@@ -26,6 +29,11 @@ public class Client implements Runnable{
         this.contextStrList = new ArrayList<>();
         this.sleepTime = new ArrayList<>();
 
+        isParted = Interaction.init("");
+        System.out.println("[INFO] 客户端开始启动");
+        Interaction.say("进行端口绑定", isParted);
+        System.out.println("[INFO] 成功绑定" + port + "端口，链接建立");
+        Interaction.say("进行读取时间戳", isParted);
 
         try {
             FileReader fr = new FileReader(contextFilePath);
@@ -45,6 +53,7 @@ public class Client implements Runnable{
             }
             sleepTime.add(1L);
 
+            System.out.println("[INFO] 时间戳读取成功");
             socket = new DatagramSocket();
             address = InetAddress.getByName("localhost");
 
@@ -57,15 +66,14 @@ public class Client implements Runnable{
     @Override
     public void run() {
 
-        System.out.println("Client begins to start.....");
-
+        Interaction.say("开始发送数据", isParted);
         long sleepMillis = 0;
         long totalTime = 0;
         long startTime = System.nanoTime();
         long endTime = 0;
         for (int i = 0; i < contextStrList.size(); i++){
 
-            System.out.println("Send " + i + " at " + TimestampHelper.getCurrentTimestamp() + ", sleep:" + sleepMillis + " ms");
+            System.out.print("Send " + (i + 1) + "/" + contextStrList.size() + "\r");
             sleepMillis = sleepTime.get(i);
             sendMsg(i+ "," + contextStrList.get(i) + "," + sleepMillis);
             endTime = System.nanoTime();
@@ -85,11 +93,14 @@ public class Client implements Runnable{
 
         }
         endTime = System.nanoTime();
-        System.out.println("Total send time： " + (endTime - startTime) / 1000000 + " ms");
+        System.out.println();
+        System.out.println("[INFO] 数据文件发送结束");
 
-        while (true) {
+        Interaction.say("开始广播结束报文关闭链接，关闭客户端", isParted);
+        for (int i = 0; i < 10000; i++) {
             sendMsg("exit");
         }
+        System.out.println("[INFO] 成功广播结束报文关闭链接，客户端关闭");
 
     }
 
@@ -119,17 +130,15 @@ public class Client implements Runnable{
                 e.printStackTrace();
             }
             String dataFilePath = properties.getProperty("dataFilePath");
-            String changeFilePath = properties.getProperty("changeFilePath");
+            String patternFilePath = properties.getProperty("patternFilePath");
             String changeHandlerType = properties.getProperty("changeHandlerType");
 
             Thread client;
             if("time".equals(changeHandlerType.split("-")[1])) {
-                client = new Thread(new Client(dataFilePath));
+                ChangeFileHelper changeFileHelper = new ChangeFileHelper(patternFilePath);
+                dataFilePath = changeFileHelper.parseChangeFile(dataFilePath);
             }
-            else {
-                client = new Thread(new Client(changeFilePath));
-            }
-
+            client = new Thread(new Client(dataFilePath));
             client.setPriority(Thread.MAX_PRIORITY);
             client.start();
         }

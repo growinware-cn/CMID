@@ -11,32 +11,9 @@ public class LogFileHelper {
     private static Logger LOGGER;
     public static String logFilePath;
     public static void  initLogger(String log) {
-        logFilePath = log;
-        File file = new File(logFilePath);
-        if (file.exists()) {
-            System.out.println("[INFO] 日志文件" + "'" + logFilePath + "'" + "已存在，是否覆盖（Y/N）：");
-            Scanner in = new Scanner(System.in);
-            String str;
-            while (true) {
-                str = in.nextLine();
-                if("y".equals(str.toLowerCase())) {
-                    file.delete();
-                    break;
-                }
-                else if ("n".equals(str.toLowerCase())) {
-                    do {
-                        System.out.println("[INFO] 请输入新的日志文件路径：");
-                        logFilePath = in.nextLine();
-                    } while (logFilePath.equals("") || new File(logFilePath).exists());
-                    break;
-                }
-                else {
-                    System.out.println("[INFO] 是否覆盖，请输入（Y/N）：");
-                }
-            }
-        }
-        System.out.println("[INFO] 日志文件：" + logFilePath);
-        LOGGER = new Logger(logFilePath);
+        logFilePath = Interaction.fileSay("日志文件", log);
+        System.out.println("[INFO] 日志文件为" + logFilePath);
+        LOGGER = new Logger(logFilePath, true);
     }
 
     public synchronized static Logger getLogger() {

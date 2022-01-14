@@ -9,7 +9,7 @@ public class ContextParser {
     public Context parseContext(int id, String pattern) {
         String [] fields = pattern.split(",");
         if (fields.length != 7) {
-            System.out.println("[INFO] '"+ AbstractCheckerBuilder.dataFilePath + "'文件格式错误");
+            System.out.println("[INFO] "+ AbstractCheckerBuilder.dataFilePath + "文件格式错误");
             System.exit(1);
         }
 
@@ -29,7 +29,7 @@ public class ContextParser {
             status = Integer.parseInt(fields[6]);
 
         } catch (NumberFormatException e) {
-            System.out.println("[INFO] '"+ AbstractCheckerBuilder.dataFilePath + "'文件格式错误");
+            System.out.println("[INFO] "+ AbstractCheckerBuilder.dataFilePath + "文件格式错误");
             System.exit(1);
         }
 
@@ -38,35 +38,15 @@ public class ContextParser {
 
     public Context parseChangeContext(String [] elements) {
 
-        if (elements.length != 9) {
-            System.out.println("[INFO] '"+ AbstractCheckerBuilder.changeFilePath + "'文件格式错误");
-            System.exit(1);
-        }
 
         Context context = null;
-        try {
-            context = new Context(Integer.parseInt(elements[2]),
+        context = new Context(Integer.parseInt(elements[2]),
                     elements[3],
                     elements[4],
                     Double.parseDouble(elements[5]),
                     Double.parseDouble(elements[6]),
                     Double.parseDouble(elements[7]),
                     Integer.parseInt(elements[8]));
-        } catch (NumberFormatException e) {
-            System.out.println("[INFO] '"+ AbstractCheckerBuilder.changeFilePath + "'文件格式错误");
-            System.exit(1);
-        }
         return context;
-    }
-
-    public static String updateTime(String str, String time) {
-        String [] strs = str.split(",");
-        if(strs[0].equals("+") || strs[0].equals("-")) {
-            strs[3] = time;
-        }
-        else {
-            strs[0] = time;
-        }
-        return String.join(",", strs);
     }
 }
