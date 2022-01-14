@@ -35,7 +35,7 @@ step=5
 cpuUsageLow = 0.5
 ```
 ## 2. Run
-### (1) Clone [this repository](https://github.com/njucjc/graduation-project).
+### (1) Clone this repository.
 ```
 $ git clone https://github.com/growinware-cn/CMID.git 
 or 
