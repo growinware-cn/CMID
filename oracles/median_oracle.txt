@@ -1,0 +1,261 @@
+rule_sole ctx_798
+rule_dual_sD ctx_910 ctx_415
+rule_dual_sD ctx_415 ctx_910
+rule_dual_mixed ctx_1350 ctx_691
+rule_dual_mixed ctx_691 ctx_1350
+rule_dual_mixed ctx_1630 ctx_1248
+rule_dual_mixed ctx_1248 ctx_1630
+rule_dual_mixed ctx_1822 ctx_1519
+rule_dual_mixed ctx_1519 ctx_1822
+rule_sole ctx_1836
+rule_dual_sD ctx_1922 ctx_415
+rule_dual_sD ctx_415 ctx_1922
+rule_dual_mixed ctx_2013 ctx_1689
+rule_dual_mixed ctx_1689 ctx_2013
+rule_sole ctx_2824
+rule_dual_mixed ctx_2872 ctx_2580
+rule_dual_mixed ctx_2580 ctx_2872
+rule_dual_mixed ctx_3229 ctx_2636
+rule_dual_mixed ctx_2636 ctx_3229
+rule_dual_mixed ctx_3271 ctx_2783
+rule_dual_mixed ctx_2783 ctx_3271
+rule_dual_mixed ctx_3293 ctx_2906
+rule_dual_mixed ctx_2906 ctx_3293
+rule_dual_mixed ctx_3645 ctx_3327
+rule_dual_mixed ctx_3327 ctx_3645
+rule_sole ctx_3858
+rule_dual_mixed ctx_4421 ctx_4223
+rule_dual_mixed ctx_4223 ctx_4421
+rule_dual_mixed ctx_4634 ctx_4214
+rule_dual_mixed ctx_4214 ctx_4634
+rule_dual_mixed ctx_4689 ctx_4634
+rule_dual_mixed ctx_4634 ctx_4689
+rule_sole ctx_4852
+rule_dual_mixed ctx_4913 ctx_4618
+rule_dual_mixed ctx_4618 ctx_4913
+rule_dual_mixed ctx_5002 ctx_4869
+rule_dual_mixed ctx_4869 ctx_5002
+rule_dual_mixed ctx_5145 ctx_5002
+rule_dual_mixed ctx_5002 ctx_5145
+rule_dual_mixed ctx_5562 ctx_5154
+rule_dual_mixed ctx_5562 ctx_5462
+rule_dual_mixed ctx_5154 ctx_5562
+rule_dual_mixed ctx_5462 ctx_5562
+rule_dual_mixed ctx_5644 ctx_5406
+rule_dual_mixed ctx_5406 ctx_5644
+rule_sole ctx_5850
+rule_dual_mixed ctx_5927 ctx_5801
+rule_dual_mixed ctx_5801 ctx_5927
+rule_dual_mixed ctx_6107 ctx_5801
+rule_dual_mixed ctx_5801 ctx_6107
+rule_dual_mixed ctx_6161 ctx_5771
+rule_dual_mixed ctx_5771 ctx_6161
+rule_dual_mixed ctx_6845 ctx_6643
+rule_dual_mixed ctx_6643 ctx_6845
+rule_sole ctx_6873
+rule_dual_mixed ctx_7291 ctx_6845
+rule_dual_mixed ctx_6845 ctx_7291
+rule_dual_mixed ctx_7376 ctx_7028
+rule_dual_mixed ctx_7028 ctx_7376
+rule_dual_mixed ctx_7416 ctx_7245
+rule_dual_mixed ctx_7245 ctx_7416
+rule_dual_mixed ctx_7601 ctx_7054
+rule_dual_mixed ctx_7054 ctx_7601
+rule_dual_mixed ctx_7662 ctx_7333
+rule_dual_mixed ctx_7333 ctx_7662
+rule_sole ctx_7892
+rule_dual_mixed ctx_8131 ctx_7533
+rule_dual_mixed ctx_7533 ctx_8131
+rule_dual_mixed ctx_8241 ctx_8023
+rule_dual_mixed ctx_8023 ctx_8241
+rule_dual_mixed ctx_8291 ctx_8241
+rule_dual_mixed ctx_8241 ctx_8291
+rule_dual_mixed ctx_8317 ctx_8108
+rule_dual_mixed ctx_8108 ctx_8317
+rule_dual_mixed ctx_8496 ctx_8215
+rule_dual_mixed ctx_8496 ctx_8461
+rule_dual_mixed ctx_8215 ctx_8496
+rule_dual_mixed ctx_8461 ctx_8496
+rule_dual_mixed ctx_8541 ctx_8475
+rule_dual_mixed ctx_8475 ctx_8541
+rule_dual_mixed ctx_8856 ctx_8241
+rule_dual_mixed ctx_8241 ctx_8856
+rule_sole ctx_8884
+rule_dual_mixed ctx_9377 ctx_9371
+rule_dual_mixed ctx_9371 ctx_9377
+rule_sole ctx_9859
+rule_dual_mixed ctx_9965 ctx_9461
+rule_dual_mixed ctx_9461 ctx_9965
+rule_dual_mixed ctx_10586 ctx_10055
+rule_dual_mixed ctx_10055 ctx_10586
+rule_dual_mixed ctx_10832 ctx_10586
+rule_dual_mixed ctx_10586 ctx_10832
+rule_dual_mixed ctx_10851 ctx_10369
+rule_dual_mixed ctx_10369 ctx_10851
+rule_sole ctx_10891
+rule_dual_mixed ctx_11085 ctx_10586
+rule_dual_mixed ctx_10586 ctx_11085
+rule_sole ctx_11868
+rule_dual_mixed ctx_12364 ctx_11711
+rule_dual_mixed ctx_11711 ctx_12364
+rule_dual_mixed ctx_12624 ctx_12183
+rule_dual_mixed ctx_12624 ctx_12475
+rule_dual_mixed ctx_12183 ctx_12624
+rule_dual_mixed ctx_12475 ctx_12624
+rule_dual_mixed ctx_12706 ctx_12364
+rule_dual_mixed ctx_12364 ctx_12706
+rule_dual_mixed ctx_12709 ctx_12566
+rule_dual_mixed ctx_12566 ctx_12709
+rule_dual_mixed ctx_12775 ctx_12501
+rule_dual_mixed ctx_12501 ctx_12775
+rule_sole ctx_12888
+rule_dual_mixed ctx_13046 ctx_12505
+rule_dual_mixed ctx_12505 ctx_13046
+rule_dual_mixed ctx_13136 ctx_12624
+rule_dual_mixed ctx_12624 ctx_13136
+rule_dual_mixed ctx_13180 ctx_12596
+rule_dual_mixed ctx_12596 ctx_13180
+rule_dual_s3 ctx_13232 ctx_12027
+rule_dual_s3 ctx_12027 ctx_13232
+rule_dual_mixed ctx_13427 ctx_13379
+rule_dual_mixed ctx_13379 ctx_13427
+rule_dual_mixed ctx_13488 ctx_13418
+rule_dual_mixed ctx_13418 ctx_13488
+rule_sole ctx_13841
+rule_dual_mixed ctx_13843 ctx_13567
+rule_dual_mixed ctx_13567 ctx_13843
+rule_dual_s3 ctx_13973 ctx_13232
+rule_dual_s3 ctx_13232 ctx_13973
+rule_sole ctx_14422
+rule_dual_mixed ctx_14560 ctx_13895
+rule_dual_mixed ctx_13895 ctx_14560
+rule_dual_mixed ctx_14566 ctx_14120
+rule_dual_mixed ctx_14120 ctx_14566
+rule_sole ctx_14828
+rule_sole ctx_14906
+rule_dual_mixed ctx_15137 ctx_15121
+rule_dual_mixed ctx_15121 ctx_15137
+rule_dual_mixed ctx_15255 ctx_14636
+rule_dual_mixed ctx_15255 ctx_14711
+rule_dual_mixed ctx_15255 ctx_14802
+rule_dual_mixed ctx_14636 ctx_15255
+rule_dual_mixed ctx_14711 ctx_15255
+rule_dual_mixed ctx_14802 ctx_15255
+rule_dual_mixed ctx_15421 ctx_15255
+rule_dual_mixed ctx_15255 ctx_15421
+rule_dual_mixed ctx_15559 ctx_15160
+rule_dual_mixed ctx_15160 ctx_15559
+rule_sole ctx_15682
+rule_sole ctx_15845
+rule_dual_mixed ctx_16291 ctx_16026
+rule_dual_mixed ctx_16026 ctx_16291
+rule_dual_sA ctx_16336 ctx_15332
+rule_dual_sA ctx_15332 ctx_16336
+rule_dual_mixed ctx_16363 ctx_15952
+rule_dual_mixed ctx_15952 ctx_16363
+rule_dual_mixed ctx_16715 ctx_16191
+rule_dual_mixed ctx_16715 ctx_16438
+rule_dual_mixed ctx_16191 ctx_16715
+rule_dual_mixed ctx_16438 ctx_16715
+rule_sole ctx_16846
+rule_dual_mixed ctx_17144 ctx_16528
+rule_dual_mixed ctx_16528 ctx_17144
+rule_dual_mixed ctx_17265 ctx_17118
+rule_dual_mixed ctx_17118 ctx_17265
+rule_dual_mixed ctx_17361 ctx_17265
+rule_dual_mixed ctx_17265 ctx_17361
+rule_dual_mixed ctx_17786 ctx_17661
+rule_dual_mixed ctx_17661 ctx_17786
+rule_dual_mixed ctx_17792 ctx_17412
+rule_dual_mixed ctx_17412 ctx_17792
+rule_sole ctx_17868
+rule_dual_mixed ctx_17873 ctx_17830
+rule_dual_mixed ctx_17830 ctx_17873
+rule_dual_mixed ctx_18102 ctx_17724
+rule_dual_mixed ctx_17724 ctx_18102
+rule_dual_mixed ctx_18229 ctx_17801
+rule_dual_mixed ctx_17801 ctx_18229
+rule_dual_mixed ctx_18591 ctx_18356
+rule_dual_mixed ctx_18356 ctx_18591
+rule_dual_mixed ctx_18628 ctx_18591
+rule_dual_mixed ctx_18591 ctx_18628
+rule_dual_mixed ctx_18725 ctx_18369
+rule_dual_mixed ctx_18369 ctx_18725
+rule_sole ctx_18854
+rule_dual_mixed ctx_18886 ctx_18600
+rule_dual_mixed ctx_18600 ctx_18886
+rule_dual_mixed ctx_19297 ctx_19184
+rule_dual_mixed ctx_19184 ctx_19297
+rule_dual_mixed ctx_19633 ctx_18987
+rule_dual_mixed ctx_18987 ctx_19633
+rule_sole ctx_19836
+rule_dual_s8 ctx_19875 ctx_18541
+rule_dual_s8 ctx_18541 ctx_19875
+rule_dual_sG ctx_20578 ctx_19618
+rule_dual_sG ctx_19618 ctx_20578
+rule_sole ctx_20844
+rule_dual_mixed ctx_21091 ctx_20693
+rule_dual_mixed ctx_20693 ctx_21091
+rule_dual_mixed ctx_21322 ctx_20705
+rule_dual_mixed ctx_21322 ctx_20786
+rule_dual_mixed ctx_20705 ctx_21322
+rule_dual_mixed ctx_20786 ctx_21322
+rule_sole ctx_21373
+rule_dual_s8 ctx_21647 ctx_20672
+rule_dual_s8 ctx_20672 ctx_21647
+rule_dual_mixed ctx_21704 ctx_21322
+rule_dual_mixed ctx_21322 ctx_21704
+rule_dual_mixed ctx_21820 ctx_21604
+rule_dual_mixed ctx_21604 ctx_21820
+rule_dual_mixed ctx_21964 ctx_21322
+rule_dual_mixed ctx_21322 ctx_21964
+rule_sole ctx_22610
+rule_sole ctx_22667
+rule_dual_mixed ctx_22705 ctx_22343
+rule_dual_mixed ctx_22343 ctx_22705
+rule_dual_mixed ctx_22855 ctx_22658
+rule_dual_mixed ctx_22658 ctx_22855
+rule_dual_mixed ctx_22890 ctx_22595
+rule_dual_mixed ctx_22595 ctx_22890
+rule_dual_mixed ctx_22952 ctx_22498
+rule_dual_mixed ctx_22498 ctx_22952
+rule_dual_mixed ctx_23531 ctx_23405
+rule_dual_mixed ctx_23405 ctx_23531
+rule_sole ctx_23567
+rule_dual_mixed ctx_24019 ctx_23824
+rule_dual_mixed ctx_23824 ctx_24019
+rule_dual_mixed ctx_24447 ctx_23814
+rule_dual_mixed ctx_23814 ctx_24447
+rule_dual_mixed ctx_24470 ctx_23847
+rule_dual_mixed ctx_23847 ctx_24470
+rule_sole ctx_24530
+rule_dual_mixed ctx_24876 ctx_24289
+rule_dual_mixed ctx_24289 ctx_24876
+rule_dual_mixed ctx_25095 ctx_24821
+rule_dual_mixed ctx_24821 ctx_25095
+rule_dual_mixed ctx_25461 ctx_25313
+rule_dual_mixed ctx_25313 ctx_25461
+rule_sole ctx_25487
+rule_dual_mixed ctx_26076 ctx_25534
+rule_dual_mixed ctx_25534 ctx_26076
+rule_dual_mixed ctx_26173 ctx_26062
+rule_dual_mixed ctx_26062 ctx_26173
+rule_sole ctx_26477
+rule_dual_mixed ctx_26738 ctx_26349
+rule_dual_mixed ctx_26349 ctx_26738
+rule_sole ctx_27430
+rule_dual_mixed ctx_27870 ctx_27406
+rule_dual_mixed ctx_27406 ctx_27870
+rule_sole ctx_28378
+rule_dual_mixed ctx_28712 ctx_28161
+rule_dual_mixed ctx_28161 ctx_28712
+rule_dual_mixed ctx_28785 ctx_28356
+rule_dual_mixed ctx_28356 ctx_28785
+rule_dual_mixed ctx_28916 ctx_28608
+rule_dual_mixed ctx_28608 ctx_28916
+rule_dual_mixed ctx_29076 ctx_28809
+rule_dual_mixed ctx_28809 ctx_29076
+rule_dual_mixed ctx_29129 ctx_28867
+rule_dual_mixed ctx_28867 ctx_29129
+rule_sole ctx_29340
+Total INC: 260

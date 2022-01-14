@@ -1,0 +1,7 @@
+rule_sole ctx_0
+rule_sole ctx_35
+rule_sole ctx_76
+rule_sole ctx_101
+rule_sole ctx_174
+rule_sole ctx_187
+Total INC: 6
