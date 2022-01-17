@@ -72,13 +72,12 @@
 
   |      配置项       |                             含义                             | 是否必须（Y/N） |
   | :---------------: | :----------------------------------------------------------: | :-------------: |
-  |   ruleFilePath    | 配置一致性规则文件，由一阶逻辑公式描述，可参考[rules.xml](resource/rules.xml) |        Y        |
-  |  patternFilePath  | 配置pattern文件，描述上下文集合，可参考[patterns.xml](resource/patterns.xml) |        Y        |
-  |   dataFilePath    |   配置上下文数据文件，可参考[data.txt](resource/data.txt)    |        Y        |
-  |  changeFilePath   | 配置上下文数据变化文件，可参考[data_changes.txt](resource/data_changes.txt) |        Y        |
+  |   ruleFilePath    | 配置一致性规则文件，由一阶逻辑公式描述，可参考[rules.xml](consistency_rules.xml) |        Y        |
+  |  patternFilePath  | 配置pattern文件，描述上下文集合，可参考[patterns.xml](consistency_patterns.xml) |        Y        |
+  |   dataFilePath    |   配置上下文数据或变化文件，可参考[Road_C1.txt](data/Road_C1.txt)或[Road_C1_change.txt](data/Road_C1_change.txt)    |        Y        |
   |    logFilePath    |                       配置日志输出位置                       |        Y        |
   |     processor     |     配置检测技术，可选值为：xlinkit、GEAS_E、GEAS_C、GEAS_G和GEAS_I     |        Y        |
-  | changeHandlerType | 配置运行方式，可选值为：static-time-based、 static-change-based、dynamic-time-based、dynamic-change-based |        Y        |
+  | changeHandlerType | 配置运行方式（分别搭配上下文数据或变化文件），可选值为：static-time-based、 static-change-based、dynamic-time-based、dynamic-change-based |        Y        |
   |      taskNum      |        配置并发线程数，该配置项仅在GEAS_C下生效 | 	Y	 |
   |  oracleFilePath   | 配置oracle文件，若配置则会在检测结束后与oracle比较输出误报、漏报情况 |        N        |
 
