@@ -79,7 +79,6 @@
   |    logFilePath    |                       配置日志输出位置                       |        Y        |
   |     processor     |     配置检测技术，可选值为：xlinkit、GEAS_E、GEAS_C、GEAS_G和GEAS_I     |        Y        |
   | changeHandlerType | 配置运行方式，可选值为：static-time-based、 static-change-based、dynamic-time-based、dynamic-change-based |        Y        |
-    |
   |      taskNum      |        配置并发线程数，该配置项仅在GEAS_C下生效 | 	Y	 |
   |  oracleFilePath   | 配置oracle文件，若配置则会在检测结束后与oracle比较输出误报、漏报情况 |        N        |
 
